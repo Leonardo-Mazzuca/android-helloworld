@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
            Podemos dizer que isso se equipara ao document.getElementById do JS
            Dentro dos <> passar o tipo de elemento
            O R é a variavél que acessa o layout
-          Caso já tenhamos algum elemento com o id, o auto-complete será realizado
+           Caso já tenhamos algum elemento com o id, o auto-complete será realizado
      */
 
 
@@ -27,6 +27,7 @@ class MainActivity : ComponentActivity() {
 //        Podemos pensar que isso seria igual a um listener de input do JS
         inputName.setOnEditorActionListener{textView, actionId, _ ->
 
+            //constânte para identificar que ação foi concluída
             if(actionId == EditorInfo.IME_ACTION_DONE) {
 
                 //Limpa espaços em branco com método trim()
